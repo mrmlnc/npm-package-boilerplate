@@ -1,0 +1,23 @@
+# Common files
+.editorconfig
+.gitattributes
+.gitignore
+.vsts
+tsconfig.json
+tslint.json
+
+# Output files
+out/tests
+out/**/*.js.map
+out/**/*.spec.{d.ts,js}
+
+# Editor directories
+.vscode
+
+# Other directories
+.tmp
+.github
+fixtures
+src
+node_modules
+typings
