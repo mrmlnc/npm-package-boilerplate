@@ -19,16 +19,16 @@
   "devDependencies": {
     "@types/mocha": "^5.2.7",
     "@types/node": "^8.10.53",
+    "eslint": "^6.5.1",
+    "eslint-config-mrmlnc": "^1.0.1",
     "mocha": "^6.2.0",
     "rimraf": "^3.0.0",
-    "tslint": "^5.19.0",
-    "tslint-config-mrmlnc": "^2.1.0",
     "typescript": "^3.6.2"
   },
   "dependencies": {},
   "scripts": {
     "clean": "rimraf out",
-    "lint": "tslint \"src/**/*.ts\" -p . -t stylish",
+    "lint": "eslint \"src/**/*.ts\" --cache",
     "compile": "tsc",
     "test": "mocha \"out/**/*.spec.js\" -s 0",
     "build": "npm run clean && npm run compile && npm run lint && npm test",

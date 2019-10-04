@@ -1,6 +1,6 @@
 import * as assert from 'assert';
 
-import * as pkg from './index';
+import * as pkg from '.';
 
 describe('Package', () => {
 	describe('.sum', () => {
